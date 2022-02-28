@@ -1,0 +1,45 @@
+// Don't modify this section, it's used to print your output
+function append(text) {
+  var node = document.createElement("p");
+  var textnode = document.createTextNode(text);
+  node.appendChild(textnode);
+  document.getElementById('output').appendChild(node);
+}
+// Don't modify above this line
+
+// DO change this function
+//This line starts the discription of the function awesome
+function awesome() {
+//This describes the three parts of the for loop. The initialExpresion (start counting at 1), the conditionalStatement (if i is less than 45 continue with loop.),
+// and the incrimentExpresion (Add 1 to i if conditional statment it met).  Each separated by a ;
+for (let i = 1; i < 21; i++)
+	{ 
+//first conditional statment, multiple of 15. If the interger divided by 15 has a remainder of 0
+//then this statment is true.
+	if  (i % 15 === 0){
+//prints "Awesome" if condition is true, moves on to the next condition if it is false
+      append("Awesome")
+    }
+//second condition, multiple of threes. If the interger divided by 3 has a remainder of 0
+//then this statement is true.
+	else if (i % 3 === 0) {
+//prints "Awe" if condition is true, moves to next condition if false
+      append("Awe")
+    }
+//third condition, multiples of five. If the interger divided by 5 has a remainder of 0
+//then this statment is true.
+	else if (i % 5 === 0 ) {
+//prints "Some" if condition is true, moves to next condition if false
+      append("Some")
+    }
+//Final conditional statment. This statment will print all other intergers that dont meet 
+//any earlier condition.
+    else {
+      append(i)
+    }
+  }
+} 
+
+// You won't need to modify below this line.
+// This line will call your function on 'Run'. 
+awesome();
