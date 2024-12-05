@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	
 	let anotherPost = document.createElement('article');
 	anotherPost.innerHTML = `
-		<h3>Test Article</h3>
+		<h3>Cooper is a Poopy Butt</h3>
 		<p>Posted on: <time datetime="2024-12-04">December 4, 2024</time></p>
 		<p>Today I signed up for X and now I am writing blogs. What will happen next?</p>
 	`;
