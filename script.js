@@ -46,7 +46,41 @@ document.addEventListener('DOMContentLoaded', (event) => {
             blogPostsContainer.appendChild(article);
         });
     }
-
+	
+	// Function to generate contact list
+	function generateContactList(contacts) {
+		const contactContainer = document.getElementById('contact');
+		contacts.forEach(contact => {
+			const contact = document.createElement('contact');
+			contact.innerHTML = `
+			<h3>${contact.name}</h3>
+			<p>Phone Number: ${contact.phone}</p>
+			<p>Email: ${contact.email}</p>
+			`;
+			contactContainer.appendChild(contact);
+		});
+	}
     // Generate blog posts
     generateBlogPosts(blogPosts);
+	
+	//Array for Contact Lists
+	const contactList = [
+		{
+			name: "Mason Williams",
+			email: "bellowingbutcher@gmail.com",
+			phone: "606-207-3397"
+		},
+		
+		{
+			name: "Sarah Williams",
+			email: "placeholder@gmail.com",
+			phone: "606-867-5309"
+		},
+		
+		{
+			name: "Cooper Williams",
+			email: "placeholder@gmail.com",
+			phone: "606-867-5309"
+		}
+	];
 });
