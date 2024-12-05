@@ -47,19 +47,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     }
 	
-	// Function to generate contact list
-	function generateContactList(contacts) {
-		const contactContainer = document.getElementById('contact');
-		contacts.forEach(contact => {
-			const contact = document.createElement('contact');
-			contact.innerHTML = `
-			<h3>${contact.name}</h3>
-			<p>Phone Number: ${contact.phone}</p>
-			<p>Email: ${contact.email}</p>
-			`;
-			contactContainer.appendChild(contact);
-		});
-	}
     // Generate blog posts
     generateBlogPosts(blogPosts);
 	
@@ -83,4 +70,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			phone: "606-867-5309"
 		}
 	];
+	
+	// Function to generate contact list
+	function generateContactList(contacts) {
+		const contactContainer = document.getElementById('contact');
+		contacts.forEach(contact => {
+			const contact = document.createElement('contact');
+			contact.innerHTML = `
+			<h3>${contact.name}</h3>
+			<p>Phone Number: ${contact.phone}</p>
+			<p>Email: ${contact.email}</p>
+			`;
+			contactContainer.appendChild(contact);
+		});
+	}
+	// Generate contact list
+	generateContactList(contactList);
 });
