@@ -18,11 +18,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
         <p>Mark your calendars for our farm's annual fall festival!</p>
     `;
     blogSection.appendChild(newPost);
-	
-	newPost.innerHTML = `
-		<h3>Test Article</h3>
-		<p>Posted on: <time datetime="2024-12-04">December 4, 2024</time></p>
-		<p>Today I signed up for X and now I am writing blogs. What will happen next?</p>
-	`;
-	blogSection.appendChild(newPost);
 });
